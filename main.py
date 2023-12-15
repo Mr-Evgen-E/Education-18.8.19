@@ -5,9 +5,9 @@ try:
     for i in range(countTiсkets):
         age = int(input(f"Введите возраст человека (цифрами) {i+1}: "))
         if 0 < age < 110:
-            if 18 <= age <= 25:
+            if 18 <= age < 25:
                 sumCost += 990
-            elif age > 25:
+            elif age >= 25:
                 sumCost += 1390
         else:
             print("Вы указали неправильный возраст! Повторите оформление заново.")
